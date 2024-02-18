@@ -213,6 +213,18 @@ label::after{
 }
 
 /* ------------------footer----------------------- */
+.f-item{
+    display: inline-flex;
+  flex-wrap: wrap;
+  align-items: start;
+}
+.f-item li{
+    flex: 1 0 25%; /* explanation below */
+    list-style: none;
+    margin-bottom: 30px;
+  flex-direction: column;
+  
+}
 
 footer{
     padding: 50px 15% 10px;
@@ -223,6 +235,11 @@ footer h2{
     font-size:18px;
     font-weight: 400;
     margin-bottom: 30px;
+}
+footer .item{
+    display: flex;
+    align-items: start;
+    padding: 10px 0;
 }
 footer .item-col{
     flex-basis: 25%;
@@ -235,10 +252,6 @@ footer .item-col a{
     text-decoration: none;
     font-size: 14px;
     margin-bottom: 10px;
-}
-footer .item{
-    align-items: start;
-    padding: 10px 0;
 }
 footer .lang-btn{
     color: white;
@@ -261,7 +274,7 @@ footer .lang-btn{
     }
     nav .lang-btn{
         padding: 4px 8px;
-    }
+    }   
     .hero{
        position: unset;
        transform: none;
